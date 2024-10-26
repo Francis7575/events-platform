@@ -9,9 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        white: 'rgba(255, 255, 255)',
+        blue: 'hsl(232, 61%, 27%)',
+        darkBlue: 'hsl(230, 62%, 20%)',
+        secondDarkBlue: 'hsl(230, 62%, 19%)',
+        darkGray: 'rgb(51, 51, 51)',
+        gray: 'hsl(180, 1%, 28%)',
+        lightGray: 'hsl(0, 0%, 91%)'
       },
+      backgroundImage: {
+        'cornerstone': "url('/cornerstone.png')",
+      }
     },
   },
   plugins: [],
