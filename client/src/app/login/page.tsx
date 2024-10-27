@@ -6,12 +6,12 @@ import { ChangeEvent, useState } from 'react';
 import PasswordInput from '@/components/common/password-input'
 import PasswordResetModal from '@/components/login/password-reset-modal';
 
-
 const page = () => {
   const [formData, setFormData] = useState<LoginForm>({
     email: '',
     password: ''
   });
+
   const [isPasswordReset, setIsPasswordReset] = useState<boolean>(false);
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -21,7 +21,7 @@ const page = () => {
       [name]: value
     }))
   }
-
+  
   return (
     <Box className="px-[2.5rem] flex flex-col justify-center items-center min-h-screen">
       <Box className="md:bg-white md:py-8 md:px-6 rounded-lg max-w-[500px]">
@@ -32,7 +32,7 @@ const page = () => {
           </Typography>
         </Box>
       </Box>
-      <form className='w-full mt-3'>
+      <form className='w-full mt-3 max-w-[500px]'>
         <Stack spacing={2}>
           <FormControl required fullWidth>
             <TextField
@@ -58,7 +58,10 @@ const page = () => {
             textAlign: 'right',
             cursor: 'pointer',
             marginTop: '10px',
-            color: 'hsl(216, 46%, 49%)'
+            color: 'hsl(216, 46%, 49%)',
+            '&:hover': {
+              opacity: '0.7'
+            }
           }}
         >
           Forgot password?

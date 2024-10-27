@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { UserContextProvider } from "@/context/userContext";
 
 export const metadata: Metadata = {
   title: "Cornerstone Events",
@@ -23,7 +24,9 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        {children}
+        <UserContextProvider>
+          {children}
+        </UserContextProvider>
       </body>
     </html>
   );
