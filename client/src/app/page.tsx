@@ -25,7 +25,7 @@ export default function Home() {
             </p>
           </div>
           <div className='text-white flex justify-center gap-4 mt-6'>
-            <Link href="/signup" className='bg-darkBlue py-2 px-4 rounded-md hover:opacity-70'>Sign Up</Link>
+            <Link href="/login" className='bg-darkBlue py-2 px-4 rounded-md hover:opacity-70'>Sign Up</Link>
             <Link href="" className='bg-darkBlue py-2 px-4 rounded-md hover:opacity-70'>See Events</Link>
           </div>
         </div>
