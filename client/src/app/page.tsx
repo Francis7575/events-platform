@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="bg-cornerstone bg-cover bg-no-repeat bg-center min-h-screen">
       <div className="px-4 flex justify-center items-center min-h-screen">
-        <div className="bg-white py-8 px-6 rounded-lg max-w-[500px]">
+        <div className="bg-white py-8 px-6 rounded-lg max-w-[550px]">
           <div className="flex items-center justify-center gap-4 mb-6">
             <Image width={80} height={80} src="/logo.png" alt="Eventify logo" />
             <p className="uppercase text-[1.2rem] text-blue">

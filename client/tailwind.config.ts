@@ -19,6 +19,7 @@ const config: Config = {
       },
       backgroundImage: {
         'cornerstone': "url('/cornerstone.png')",
+        'auth': "url('/auth-bg.png')",
       }
     },
   },

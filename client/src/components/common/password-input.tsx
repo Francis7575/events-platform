@@ -15,6 +15,7 @@ const iconStyle: React.CSSProperties = {
   inset: '50% 0 auto auto',
   transform: 'translate(-100%, -50%)',
   zIndex: 50,
+  cursor: 'pointer'
 }
 
 export default function PasswordInput(props: Props) {
